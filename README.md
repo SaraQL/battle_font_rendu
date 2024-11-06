@@ -1,4 +1,4 @@
-# variable_font_exercice1
+# variable_font_rendu
 
 url de mon site :
-https://clarajacquemoud-prof.github.io/battle_font_exercice1/
+https://saraql.github.io/battle_font_rendu/
