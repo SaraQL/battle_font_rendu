@@ -1,0 +1,405 @@
+/* Les animations*/
+
+@keyframes pfff {
+  0% {
+    color:rgb(113, 221, 135);
+
+    position: relative;
+    left:300px;
+    bottom:150px;
+  }
+  60%{
+    font-variation-settings: "grow" 0,"THCK" 300;    
+  }
+  100% {
+    color:rgb(18, 116, 117);
+    font-variation-settings: "grow" 1000,"THCK" 300;
+    position: relative;
+    left:570px;
+    bottom:-900px;
+  }
+}
+
+@keyframes tic_haut {								
+  0%{
+    opacity: 1;
+    font-variation-settings: "SCAN" -53,"BLED" 0;
+    top:-1200px;
+  }
+  100%{
+    opacity: 1;
+    font-variation-settings: "SCAN" 100,"BLED" 0;
+    top:100px;
+  }
+}
+
+@keyframes tac_gauche {								
+  0%{
+    opacity: 1;
+    right:1000px;
+    font-variation-settings: "SCAN" -53,"BLED" 0;
+  }
+  100%{ 
+    opacity: 1;
+    right:390px;
+    font-variation-settings: "SCAN" 100,"BLED" 0;
+  }
+}
+
+@keyframes tac_droite {								
+  0%{
+    opacity: 1;
+    font-variation-settings: "SCAN" -53,"BLED" 0;
+    left:1000px;
+  }
+  100%{  
+    opacity: 1;
+    font-variation-settings: "SCAN" 100,"BLED" 0;
+    left: 350px;
+  }
+}
+
+@keyframes tic_bas {								
+  0%{
+    opacity: 1;
+    font-variation-settings: "SCAN" -53,"BLED" 0;
+    top:1000px;
+  }
+  100%{
+    opacity: 1;
+    font-variation-settings: "SCAN" 100,"BLED" 0;
+    top: 450px;
+  }
+}
+
+
+@keyframes pschit {								
+  0%{
+    transform: translateX(-500px);
+  }
+  50%{
+    font-variation-settings: "grow" 500,"THCK" 100;
+  }
+  100%{
+    font-variation-settings: "grow" 500, "THCK" 1000;
+  }
+}
+
+
+@keyframes dring {								
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(1deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-1deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+/* Les typographies */  
+
+.fungal{
+  font-family: 'FungalGX';
+  cursor : url(champi_curseur.png), pointer;
+
+}
+
+.sixtyhour{
+  font-family: 'sixtyhour';
+  cursor : url(ordi_curseur.png), pointer;
+}
+
+
+/*Les éléments autour */
+
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(158, 219, 242);
+    background: linear-gradient(rgba(139,167,236,1) 0%, rgba(158,219,242,1) 50%, rgba(112,246,233,1) 100%);
+  }
+  
+  main{
+    display: block;
+    position: relative;
+    width: 1700px;
+    overflow-x: hidden;
+    background-color: rgb(158, 219, 242);
+    background: linear-gradient(rgba(139,167,236,1) 0%, rgba(158,219,242,1) 50%, rgba(112,246,233,1) 100%);
+  }
+
+
+#battle{
+  font-size: 250px;
+  color: rgb(22,36,15);
+  z-index: 10;
+  position: relative;
+  bottom:350px;
+  left:635px;
+}
+
+#dia_champi{
+  height: 500px;
+  width: 1020px;
+  position: relative;
+  top:75px;
+  right:40px;
+  z-index: 10;
+}
+
+#tete_champi{
+  height: 375px;
+  width: 625px;
+  position:relative;
+  left:100px
+}
+
+#font{
+  font-size: 200px;
+  color:rgb(29,12,67);
+  z-index: 100;
+  position: relative;
+  bottom:60px;
+  left:175px;
+}
+
+#dia_ordi{
+  height: 500px;
+  width: 1050px;
+  position: relative;
+  bottom:350px;
+  left:50px;
+  z-index: 10;
+}
+
+#tete_ordi{
+  height: 375px;
+  width: 450px;
+  position:relative;
+  bottom:500px;
+  left:100px
+}
+
+
+#pfff{
+  font-size: 200px;
+  color:rgb(140, 177, 57);
+  position: relative;
+  left:300px;
+  bottom:150px;
+  animation-name: pfff;
+  animation-duration:2.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+
+#img_ordi{
+  height: 250px;
+  transform: rotate(-25deg);
+  position:relative;
+  bottom:550px;
+  left:1250px
+}
+
+#img_champi{
+  height: 300px;
+  position:relative;
+  right:50px
+}
+
+#tic_haut{
+  font-size: 100px;
+  opacity: 0;
+  color:rgb(118,88,178);
+  position: relative;
+  left: 700px;
+  animation-name: tic_haut;
+  animation-duration:2.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+#tac_gauche{
+  font-size: 100px;
+  opacity: 0;
+  color:rgb(118,88,178);
+  position: relative;
+  bottom: 400px;
+  transform: rotate(-90deg);
+  animation-name: tac_gauche;
+  animation-duration:2.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 5s; 
+}
+
+#tac_droite{
+  font-size: 100px;
+  opacity: 0;
+  color:rgb(118,88,178);
+  position: relative;
+  top: 910px; 
+  transform: rotate(90deg);
+  animation-name: tac_droite;
+  animation-duration:2.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+#tic_bas{
+  font-size: 100px;
+  opacity: 0;
+  color:rgb(118,88,178);
+  position: relative;
+  right:690px; 
+  transform: rotate(180deg);
+  animation-name: tic_bas;
+  animation-duration:2.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+
+#pschit_haut{
+  font-size: 100px;
+  color:rgb(113, 221, 135);
+  position: relative;
+  right:50px;
+  top:700px;
+  transform:rotate(-30deg);
+  animation-name: pschit;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+#pschit_centre{
+  font-size: 100px;
+  color:rgb(113, 221, 135);
+  position: relative;
+  left:100px;
+  top:1200px;
+  animation-name:pschit; 
+  animation-duration:2s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+#pschit_bas{
+  font-size: 100px;
+  color:rgb(113, 221, 135);
+  position: relative;
+  right:50px;
+  top:1700px;
+  transform:rotate(30deg);
+  animation-name:pschit;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+#fenetre_web{
+  height: 800px;
+  position:relative;
+  top:650px;
+  left:600px;
+}
+
+#G{
+  font-size: 150px;
+  z-index:10; 
+  position: relative;
+  left: 680px;
+  top: 350px;
+}
+
+#L{
+  font-size: 200px;
+  z-index: 10;
+  position: relative;
+  left: 850px;
+  bottom:100px;
+}
+
+#O{
+  font-size: 150px;
+  z-index: 10;
+  position: relative;
+  left: 1100px;
+  bottom: 50px;
+}
+
+#P{
+  font-size: 300px;
+  z-index: 10;
+  position: relative;
+  left: 1300px;
+  bottom:400px;
+}
+
+
+#dring{
+  font-size:200px;
+  color: rgb(118,88,178);
+  position: relative;
+  left:350px;
+  top:100px;
+}
+
+#dring:hover{
+  animation-name: dring;
+  z-index: 100;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+svg{
+  font-size:4px;
+  z-index: 10;
+  position: relative;
+  left:150px;
+  top:50px;
+}
+
+#feuilles_gauche{
+  height:700px;
+  z-index: 100;
+  transform: rotate(-30deg);
+  position:relative;
+  bottom:700px;
+}
+
+#feuilles_droite{
+  height:700px;
+  transform: rotate(30deg);
+  position: relative;
+  bottom:700px;
+  left:250px;
+} 

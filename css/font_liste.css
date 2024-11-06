@@ -1,0 +1,22 @@
+/*Ce fichier contient tous les liens vers les fichiers des différentes fonts variables*/
+
+@font-face {
+  font-family: 'FungalGX';
+  src: url(../font/fungal/FungalVF.woff) format('woff2');
+  /*
+  axes : 
+  "grow" : développement des points / croissance (0 - 1000)
+  "THCK" : épaisseur des points (100 - 1000)
+  */
+}
+
+@font-face {
+  font-family: 'sixtyhour';
+  src: url(../font/sixtyhour/Sixtyfour.woff2) format('woff2');
+   /*
+  axes : 
+  "SCAN" : épaisseur des lignes((-53)-100)
+  "BLED": longueur des lignes(0-100);
+  */
+}
+
